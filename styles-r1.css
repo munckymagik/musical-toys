@@ -1,0 +1,36 @@
+/* Typography ---------------------------------------------------------- */
+
+body {
+  font-family: 'Times New Roman' serif
+}
+
+h1, h2 {
+  font-family: 'Helvetica Neue' sans-serif
+}
+
+/* Layout -------------------------------------------------------------- */
+
+.l-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 624px) {
+  .l-content {
+    width: 600px;
+  }
+}
+
+/* Components ---------------------------------------------------------- */
+
+.toy--selected {
+  background-color: yellow;
+}
+
+.selected-toy {
+  margin: 12px 0;
+  padding: 12px;
+
+  border: 2px solid #ccc;
+  background-color: #eee;
+}
