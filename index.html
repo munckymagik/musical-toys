@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
+    /* Typography ---------------------------------------------------------- */
+
     body {
       font-family: 'Times New Roman' serif
     }
@@ -14,6 +16,21 @@
     h1, h2 {
       font-family: 'Helvetica Neue' sans-serif
     }
+
+    /* Layout -------------------------------------------------------------- */
+
+    .l-content {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 624px) {
+      .l-content {
+        width: 600px;
+      }
+    }
+
+    /* Components ---------------------------------------------------------- */
 
     .toy--selected {
       background-color: yellow;
@@ -67,24 +84,26 @@
   </script>
 </head>
 <body>
-  <h1>Musical Toys to Play With</h1>
+  <div class="l-content">
+    <h1>Musical Toys to Play With</h1>
 
-  <p>Press the button to randomly select from the list of musical toys below</p>
-  <button class="js-select-btn">Select one</button>
-  <p>Selected toy:</p>
-  <div class="selected-toy js-selected-toy">
-    (press the button ^^)
+    <p>Press the button to randomly select from the list of musical toys below</p>
+    <button class="js-select-btn">Select one</button>
+    <p>Selected toy:</p>
+    <div class="selected-toy js-selected-toy">
+      (press the button ^^)
+    </div>
+
+    <h2>The Toys</h2>
+    <ol class="js-list">
+      <li>Subtle tempo changes</li>
+      <li>Subdividing tempo</li>
+      <li>6/4</li>
+      <li>3/4</li>
+      <li>6/8 to 2/4</li>
+      <li>6/8 to 3/4</li>
+      <li>5/4</li>
+    </ol>
   </div>
-
-  <h2>The Toys</h2>
-  <ol class="js-list">
-    <li>Subtle tempo changes</li>
-    <li>Subdividing tempo</li>
-    <li>6/4</li>
-    <li>3/4</li>
-    <li>6/8 to 2/4</li>
-    <li>6/8 to 3/4</li>
-    <li>5/4</li>
-  </ol>
 </body>
 </html>
